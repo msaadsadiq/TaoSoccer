@@ -1,0 +1,70 @@
+Tao of soccer ver 1.2.1
+
+TOS can be started in two different modes:
+
+* soccersim - This mode is for running match between two computer controlled teams.
+* soccer - This mode is used to play soccer with other people or computer controller players.
+
+===============================================================================
+LINUX
+===============================================================================
+
+1.Starting simulation
+
+To start simulation type:
+
+sh startsim
+
+This will start monitor AND server.
+Now it is nesessery to start players. You can start them by typing:
+
+sh aiplayers -left
+
+or
+
+sh aiplayers -right
+
+This will start left or right team.
+
+You can also download team from the internet.
+
+
+2. Starting game
+
+To start TOS as a game type:
+
+sh soccer
+
+Now using this application you have to start server and players.
+
+===============================================================================
+WINDOWS
+===============================================================================
+
+1.Starting simulation
+
+To start simulation type:
+
+startsim.bat
+
+This will start monitor AND server.
+Now it is nesessery to start players. To start them type:
+
+soccerplayers.bat -left
+
+or
+
+soccerplayers.bat -right
+
+This will start left or right team.
+
+You can also download team from the internet.
+
+
+2. Starting game
+
+To start TOS as a game type:
+
+soccer.bat
+
+Now using this application you have to start server and players.

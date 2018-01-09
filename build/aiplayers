@@ -1,0 +1,16 @@
+#! /bin/sh
+
+#start computer players
+
+case $1
+in
+  left*)
+	java -cp soccer.jar soccer.client.ai.AIPlayers -l 11
+    ;;
+  all*)
+	java -cp soccer.jar soccer.client.ai.AIPlayers -l 11 -r 11
+	;;
+  *)
+	java -cp soccer.jar soccer.client.ai.AIPlayers -r 11
+	;;
+esac
