@@ -1,0 +1,111 @@
+# properties for soccer server
+
+# --------Player/Viewer Number allowed-------------
+# the maximum number of clients for each team (default: 11)
+team_full = 5
+
+# the maximum number of viewer clients (default: 22)
+viewer_full = 5
+# --------------------------------------------------
+
+# ---------Time Issue of the Match (in sec)---------
+# the length of before_kick_off mode (in sec) (default: 2)
+kick_off_time = 2
+
+# Heart rate, the time each beat (simulation step) spends (default 0.1)
+heartrate = 0.1
+
+# Time before game starts and half time (in sec) (default: 20)
+wait_time = 20
+
+# time of the one half (in sec) (default: 300)
+half_time = 300
+
+# Idle time needed for deleting a non-active client (in min) (default: 2)
+idle = 2
+
+# offside rule (default: true)
+offside = true
+# --------------------------------------------------
+
+# -------------Team names---------------------------
+# left team name (default: left)
+left_name = Poland
+
+# right team name (default: right)
+right_name = Canada
+# --------------------------------------------------
+
+# -------------Networking---------------------------
+# server listening port (default: 7777)
+port = 7777
+# --------------------------------------------------
+
+# -------------Player properties--------------------
+# player's maximum speed (in m/s) (default: 7)
+maxspeed_p = 7
+
+# the time a player needs to reach full speed (in sec)
+# without friction (default: 1)
+timetomax_p = 1
+
+# player's maximum dash force (default: 100)
+maxdash = 100
+
+# player's minimum dash force (default: -30)
+mindash = -30
+
+# player's maximum kick force (default: 100)
+maxkick = 100
+
+# player's minimum kick force (default: 0)
+minkick = 0
+
+# max random factor for player movement (default: 0.05)
+random_p = 0.01
+
+# max dribble force factor for dash (default: 0.4)
+dribble_factor = 0.4
+
+# kick direction random factor. When you decide to kick the ball to X direction,
+# the actual ball moving direction will be X +/- 10 degrees. So, the closer to the
+# goal, the better chance to score. (default: 10)
+kick_random = 10
+
+# Once the player has sent the message, he has to wait some time to   
+# communicate again. (default: 30)
+noword = 30
+
+# players collide when their relative distance is smaller than COLLIDERANGE
+# (default: 1)
+collide_range = 1
+
+# Once a player makes up his mind to do an action, the action will
+# be carried out for next INERTIA steps. So this means, the client
+# does not need to send a command every step, he only needs to send
+# a command every INERTIA steps.
+# This will also give a client more time to think before to actually 
+# do something. (default: 1)
+inertia = 1
+# --------------------------------------------------
+
+# -------------Ball properties----------------------
+# player will have chance to get the ball when 
+# ball-player distance is under control range
+# (default: 0.5)
+control_range = 0.5
+
+# maximum ball speed in m/s (default: 16)
+maxspeed_b = 20
+
+# max random factor for ball movement (default: 0.05)
+random_b = 0.02
+
+# ball friction factor, such as a1 = -FRICTIONFACTOR * v0
+# (default: 0.065)
+friction_factor = 0.065
+
+
+
+
+
