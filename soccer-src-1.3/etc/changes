@@ -1,0 +1,59 @@
+===============================================================================
+CHANGES from version 1.2.1
+===============================================================================
+
+Simulation
+
+* Changed simulation algorithm. The new formula is taken from Robocup simulator:
+  A = force * ACCEL_FACTOR
+  P1 = P0 + U
+  U = V0 + A0
+  V1 = DECAY * U
+  if U > MAX_SPEED then U = MAX_SPEED
+  
+  Where:
+  P - position
+  U - speed after acceleration
+  V - velocity
+  A = acceleration
+  1 - next value
+  0 - current value (e.g. V1 next speed)
+  ACCEL_FACTOR - (0.025 for ball 0.004 for player)
+  DECAY - constant (0.94 for ball and 0.4 for player)
+  MAX_SPEED constant (3 for ball 0.7 for player)
+  
+  The simulation looks more realistic this way.
+
+* Added starting scripts for Linux and Win32
+* Beta version of Soccer monitor. This monitor can be used to run
+  simulation and test AI players.
+* Refactored the whole simulation code. Now the simulation 
+  and socket communication code is in separate package.
+* Players are not allowed to move to opponent side in the pre game mode.
+* Player with number 1 is treated as goalkeeper
+* Offside is back. 
+  Players are marked ofside when team mate passes the ball.
+  When any of the marked players kick the ball then game state changes to offside.
+  Now the rule works like in real soccer.
+* Add collision between ball and players
+* I changed player inertia to 1 (default). Of course it can still be changed 
+  in properties file. The reson for this is:
+ - It doesn't affect simulation speed. 
+ - It is a lot easier to write player. The problem with inertia is that client 
+   doesn't know when to issue the command. E.g. it is impossible to calculate where to
+   intercept ball, because player doesn't know when he will able to kick it.
+ - It doesn't affect player speed. To writie good player it is nesessery to send
+   command after each visual info.
+  
+Monitor
+
+* Left clik on the filed moves the ball
+
+  
+  
+FIXED:
+* Fixed position of goal kick, corner kick and throw in
+* Fixed bug with deciding kick off side after ball left the field or 
+  team scores a goal.
+  
+

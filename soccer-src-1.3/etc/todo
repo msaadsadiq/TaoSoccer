@@ -1,0 +1,12 @@
+Problems:
+
+Plans for version next version
+
+* Modify connection message to include interface version (c version type side)
+* Add object velocity to see message
+* Add team name to connection message instead of side
+* Modify see info send to players so they will always gets their coordinates as 
+  if they play on the left side. It should make writing clients easier.
+* Add goalkeeper. Modify connection message to allow player mark itself as goalkeeper.
+  It should help decide if there is offside.
+* Recording games
