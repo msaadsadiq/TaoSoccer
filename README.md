@@ -17,7 +17,7 @@ used in the future to build a better and a more sophisticated team. Section 4 co
 documented program listings to provide a hard copy of the code with all the necessary
 comments.
 
-![alt-text](https://github.com/msaadsadiq/Tao_of_Soccer/1.jpeg)
+![alt-text](https://github.com/msaadsadiq/Tao_of_Soccer/blob/master/1.jpeg)
 
 Section 1 - How to compile and run the program
 
